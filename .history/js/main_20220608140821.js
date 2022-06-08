@@ -7,7 +7,7 @@ function randomInteger(min, max) {
     return ('Ошибка: диапазон может быть только положительный');
   }
   if (max <= min){
-    return ('Ошибка: значение ДО не может быть меньше или равно ОТ');
+    return ('Ошибка: значение ДО не может быть меньше ОТ');
   }
   /*случайное целое от min до (max+1), так как в Math.random max не включительно*/
   min = Math.ceil(min);
@@ -24,9 +24,6 @@ function randomInteger(min, max) {
 все интервалы имеют одинаковую длину, что выравнивает вероятность получения случайных чисел
 */
 randomInteger(1.9999999999, 4.9999999999);
-
-/* Проверка максимальной длины строки
-Источник: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length */
 
 function checkStrLength(string, maxLength) {
   if (string === null || string.length <= maxLength) {
